@@ -1,0 +1,8 @@
+@import './_typography.scss';
+@import './_variables.scss';
+
+.auth {
+  color: var(--primary-color);
+  font-family: 'Roboto';
+  font-weight: 700;
+}
