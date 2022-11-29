@@ -1,8 +1,19 @@
-@import './_typography.scss';
-@import './_variables.scss';
+@use './_typography.scss';
+@use './_variables.scss';
+@use './components/header.scss';
 
-.auth {
-  color: var(--primary-color);
-  font-family: 'Roboto';
-  font-weight: 700;
+html {
+  ul {
+    list-style-type: none;
+  }
 }
+
+.org-container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 1.875rem; // 30px
+
+  margin: 0 auto;
+}
+
+// section -> container(max width, padding) -> content (vertical padding)

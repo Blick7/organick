@@ -1,0 +1,66 @@
+.org-header-content {
+  max-height: 4.5rem;
+  height: 100%;
+  margin: 2.5rem 0;
+
+  display: flex;
+  align-items: center;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fs-1);
+  color: var(--secondary-color);
+}
+
+.org-logo {
+  padding-right: 7.5rem; // 120px
+  img:first-child {
+    padding-right: 0.625rem;
+  }
+}
+
+.org-navigation {
+  flex: 1;
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    padding-right: 2.5rem; // 40px
+
+    &:last-child {
+      padding-left: 1.25rem; // 20px
+    }
+  }
+
+  &--active {
+    color: var(--primary-color);
+  }
+}
+
+.cart {
+  border: 1px solid #d4d4d4;
+  border-radius: 2.063rem; // 33px
+
+  display: flex;
+  align-items: center;
+
+  padding: 0.438rem 0; // 7px
+  padding-left: 0.688rem; // 11px
+
+  &__image {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 6.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.625rem; // 10px
+  }
+
+  &__text {
+    margin-right: 1.5rem; // 24px
+  }
+}
