@@ -1,10 +1,17 @@
 :root {
   --primary-color: #7eb693;
   --secondary-color: #274c5b;
+  --light-secondary-color: #335b6b;
   --tertiary-color: #efd372;
   --white: #ffffff;
   --light-grey: #f9f8f8;
   --dark-grey: #f1f1f1;
 
   --fs-1: clamp(1rem, calc(0.93rem + 0.36vw), 1.25rem); // max 20px, min 16px
+  --fs-2: clamp(
+    1.88rem,
+    calc(1.77rem + 0.54vw),
+    2.25rem
+  ); // max 36px, min, 30px
+  --fs-3: clamp(3.13rem, calc(2.77rem + 1.79vw), 4.38rem); // max 70, min 50
 }
