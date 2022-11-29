@@ -12,7 +12,7 @@
 }
 
 .org-logo {
-  padding-right: 7.5rem; // 120px
+  margin-right: 7.5rem; // 120px
   img:first-child {
     padding-right: 0.625rem;
   }
@@ -23,6 +23,8 @@
 
   &__items {
     display: flex;
+
+    cursor: pointer;
   }
 
   &__item {
