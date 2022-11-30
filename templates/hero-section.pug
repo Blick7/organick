@@ -1,4 +1,4 @@
-- var subtitle = "Made with nature";
+- var label = "Made with nature";
 - var title = 'Welcome to the world of nature and organic.';
 - var buttonText = 'Explore now'
 
@@ -7,6 +7,6 @@ section.org-hero
     img(src="../assets/png/hero-image.png", alt="hero-image")
   .org-container
     .org-hero-content 
-      .org-hero__subtitle= subtitle
+      h3.org-label= label
       h1.org-hero__title= title
       +org-button(buttonText, 'org-btn--tertiary')

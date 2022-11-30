@@ -1,0 +1,56 @@
+.org-about-us {
+  background-color: var(--light-grey);
+
+  &-content {
+    padding: 8.125rem 0 8.75rem 0;
+  }
+
+  &__body {
+    & > .org-label {
+      padding-bottom: 1rem;
+    }
+
+    & > .org-title {
+      padding-bottom: 1.5rem;
+    }
+
+    & > .list {
+      padding: 3.5rem 0;
+    }
+  }
+}
+
+.list {
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: var(--fs-7);
+    line-height: 1.4;
+    color: var(--secondary-color);
+  }
+
+  &__item {
+    display: flex;
+
+    &:first-child {
+      padding-bottom: 1.875rem;
+    }
+  }
+
+  &__icon {
+    padding: 1.688rem 1.5rem; // 27px 24px
+    background-color: var(--white);
+    border-radius: 1.25rem; // 20px
+    margin-right: 1.25rem; // 20px
+  }
+}
+
+@media (max-width: 1200px) {
+  .org-about-us {
+    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

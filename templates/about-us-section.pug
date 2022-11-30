@@ -1,0 +1,31 @@
+- var text = "Welcome to the world of natural and organic. Here you can discover the <br> bounty of nature. We have grown on the principles of health, and care. We <br> aim to give our customers a healthy chemical-free meal for perfect nutrition."
+- var buttonText = "Shop Now"
+section.org-about-us
+  .org-container
+    .org-about-us-content 
+      .row 
+        .col-left 
+          .org-about-us__img 
+            img(src="../assets/png/fruits.png", alt="fruits")
+        .col-right
+          .org-about-us__body 
+            h3.org-label About Us
+            h2.org-title We Believe in Organic <br> Foods For Strong Health
+            p.org-paragraph !{text}
+            .list
+              .list__item
+                .list__icon
+                  img(src="../assets/svg/organic-food.svg", alt="organic-food")
+                .list__text
+                  .list__title Organic Foods Only
+                  p.org-paragraph The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.
+              .list__item
+                .list__icon 
+                  img(src="../assets/svg/quality-standart.svg", alt="quality-standart")
+                .list__text
+                  .list__title Quality Standards
+                  p.org-paragraph Once your product is packed it will be delivered to your nearby locality you can directly visit the to buy the product.
+            +org-button(buttonText, 'org-btn--secondary')
+
+            
+

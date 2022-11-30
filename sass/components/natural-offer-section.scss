@@ -18,6 +18,7 @@
     height: 100%;
     width: 100%;
     line-height: 0;
+
     & img {
       height: 100%;
       width: 100%;
@@ -27,10 +28,10 @@
 
   &__body {
     padding-left: 3.438rem; // 55px
-  }
 
-  &__subtitle {
-    padding-bottom: 1rem;
+    & > h3 {
+      padding-bottom: 1rem;
+    }
   }
 
   &__title {
@@ -42,5 +43,5 @@
 }
 
 .fresh-fruits {
-  color: #ffffff;
+  color: #ffffff !important;
 }
