@@ -1,0 +1,13 @@
+.org-our-products {
+  &-content {
+    padding: 8rem 0; // 128px
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.625rem;
+  }
+}

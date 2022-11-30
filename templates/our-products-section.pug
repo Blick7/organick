@@ -1,0 +1,33 @@
+- var labels = ['Vegetable', 'Vegetable', 'Millet', 'Vegetable', 'Fruits', 'Millet']
+- var titles = ['Calabrese Broccoli', 'Fresh Corn', 'Dried Pistachio', 'Vegan Red Tomato', 'Organic Almonds', 'Brown Hazelnut']
+- var previousPrice = ['$ 25.00 USD', '$ 21.23 USD', '$ 61.00 USD', '$ 14.00 USD', '$ 21.00 USD', '$ 43.00 USD']
+- var newPrice = ['$ 21.00 USD', '$ 18.00 USD', '$ 48.00 USD', '$ 9.37 USD', '$ 18.00 USD', '$ 34.00 USD']
+- var images = ['../assets/png/broccoli.png', '../assets/png/corn.png', '../assets/png/pistachio.png', '../assets/png/red-tomato.png', '../assets/png/almonds.png', '../assets/png/hazelnut.png']
+- var imagesAlt = ['broccoli', 'corn', 'pistachio', 'red-tomato', 'almonds', 'hazelnut']
+
+section.org-our-products 
+  .org-container 
+    .org-our-products-content 
+      .org-our-products__title
+        h3.org-label Organic 
+        h2.org-title Our Products
+      .products__items
+        each label, index in labels
+          .products__item
+            .products__label= label
+            .products__img
+              img(src=images[index], alt=imagesAlt[index])
+            .products__description
+              .products__title= titles[index]
+              .products__info 
+                .products__previous-price= previousPrice[index]
+                .products__new-price= newPrice[index]
+                .products__rating
+                  img(src="../assets/svg/rating-star.svg", alt="rating-start")
+                  img(src="../assets/svg/rating-star.svg", alt="rating-start")
+                  img(src="../assets/svg/rating-star.svg", alt="rating-start")
+                  img(src="../assets/svg/rating-star.svg", alt="rating-start")
+                  img(src="../assets/svg/rating-star.svg", alt="rating-start")
+
+
+

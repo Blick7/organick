@@ -5,6 +5,7 @@
 @use './components/hero-section.scss';
 @use './components/natural-offer-section.scss';
 @use './components/about-us-section.scss';
+@use './components/our-products-section.scss';
 
 html {
   ul {
@@ -120,5 +121,78 @@ h3 {
   }
   .col-right {
     padding-left: 0;
+  }
+}
+
+.products {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem; // 20px
+  }
+
+  &__item {
+    flex: 1 0 32%;
+    padding: 1.8rem; // 30px
+    background-color: var(--light-grey);
+    border-radius: 1.875rem; // 30px
+    max-width: 27.938rem; // 447px
+    width: 100%;
+  }
+
+  &__label {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem; // 8px
+    padding: 0.313rem 1.25rem; // 5px 20px
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.8;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__description {
+  }
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-8);
+    line-height: 1.6;
+    color: var(--secondary-color);
+
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 0.4rem;
+  }
+
+  &__info {
+    display: flex;
+    padding-top: 0.8rem;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--fs-6);
+    line-height: 1.8;
+  }
+
+  &__previous-price {
+    font-weight: 400;
+    color: var(--grey);
+    text-decoration: line-through;
+
+    margin-right: auto;
+  }
+
+  &__new-price {
+    font-weight: 700;
+    color: var(--secondary-color);
+
+    margin-left: -5rem;
+  }
+
+  &__rating {
+    margin-left: auto;
   }
 }

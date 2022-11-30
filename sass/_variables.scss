@@ -7,6 +7,7 @@
   --light-grey: #f9f8f8;
   --dark-grey: #f1f1f1;
   --dark-grey-color: #525c60;
+  --grey: #b8b8b8;
 
   --fs-1: clamp(1rem, calc(0.93rem + 0.36vw), 1.25rem); // max 20px, min 16px
   --fs-2: clamp(
@@ -19,4 +20,5 @@
   --fs-5: clamp(2.19rem, calc(2.01rem + 0.89vw), 2.81rem); // max 45, min 35
   --fs-6: clamp(0.88rem, calc(0.8rem + 0.36vw), 1.13rem); // max 18, min 14
   --fs-7: clamp(1.13rem, calc(1rem + 0.63vw), 1.56rem); // max 25, min 18
+  --fs-8: clamp(1rem, calc(0.89rem + 0.54vw), 1.38rem); // max 22, min 16
 }
