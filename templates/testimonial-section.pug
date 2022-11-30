@@ -1,0 +1,32 @@
+- var label = 'Testimonial'
+- var title = 'What Our Customer Saying?'
+- var paragraphText = 'The quality of organic produce is extremely high, the service is second to none and the taste of the food <br> takes me back to my childhood when we were growing our own.'
+
+- var numbers = ['100%', '285', '385+', '25+']
+- var text = ['Organic', 'Active Product', 'Organic Orchads', 'Years of Farming']
+
+section.org-testimonial 
+  .org-testimonial-bg-image
+      img(src="../assets/png/testimonial.png", alt="testimonial-image")
+  .org-container 
+    .org-testimonial-content 
+      h3.org-label= label
+      h1.org-title= title
+      .org-testimonial__customer-img
+        img(src="../assets/png/customer-sara.png", alt="customer-sara")
+      .org-testimonial__customer-rating
+        img(src="../assets/svg/rating-star.svg", alt="ratung-start")
+        img(src="../assets/svg/rating-star.svg", alt="ratung-start")
+        img(src="../assets/svg/rating-star.svg", alt="ratung-start")
+        img(src="../assets/svg/rating-star.svg", alt="ratung-start")
+        img(src="../assets/svg/rating-star.svg", alt="ratung-start")
+      p.org-paragraph !{paragraphText}
+      .org-testimonial__customer-name Sara Taylor
+      .org-testimonial__consumer Consumer
+      .org-testimonial__divider
+      .org-testimonial__advantages
+        each number, index in numbers
+          .org-testimonial__item
+            .org-testimonial__item-inner
+              .org-testimonial__number= number
+              .org-testimonial__text= text[index]
