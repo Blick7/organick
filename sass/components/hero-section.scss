@@ -18,14 +18,10 @@
   &-content {
     padding-top: 13.75rem; // 220px
     color: var(--secondary-color);
-  }
 
-  &__subtitle {
-    font-family: 'Yellowtail', sans-serif;
-    font-size: var(--fs-2);
-    color: var(--primary-color);
-
-    padding-bottom: 1.875rem;
+    & > h3 {
+      padding-bottom: 1.875rem;
+    }
   }
 
   &__title {
