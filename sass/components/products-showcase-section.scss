@@ -1,0 +1,51 @@
+@import '../_functions.scss';
+
+.org-products {
+  &-showcase {
+    background-color: var(--light-primary-color);
+
+    &-container {
+      display: flex;
+      gap: pxToRem(30);
+      padding: pxToRem(140) 0;
+    }
+
+    & .org-container {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    margin: auto 0;
+  }
+
+  &__image {
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    padding: pxToRem(30);
+    border-radius: pxToRem(20);
+    background-color: var(--white);
+
+    font-size: var(--fs-7);
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+    line-height: pxToRem(35);
+    letter-spacing: pxToRem(0.36);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
