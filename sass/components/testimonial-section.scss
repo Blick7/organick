@@ -1,6 +1,8 @@
+@import '../_functions.scss';
+
 .org-testimonial {
   position: relative;
-  height: 78rem; // 1248px
+  height: pxToRem(1248);
 
   &-bg-image {
     position: absolute;
@@ -19,15 +21,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 8.125rem; // 130px
+    padding-top: pxToRem(130);
 
     & > .org-label {
-      margin-bottom: 1rem;
+      margin-bottom: pxToRem(16);
     }
 
     & > .org-paragraph {
       text-align: center;
-      padding-top: 2.125rem; // 34px
+      padding-top: pxToRem(34);
     }
   }
 
@@ -91,5 +93,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  &__number {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: var(--fs-4);
+    color: var(--secondary-color);
+    letter-spacing: pxToRem(0.36);
+    line-height: 1.3;
+  }
+
+  &__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: var(--fs-6);
+    color: var(--secondary-color);
+    letter-spacing: pxToRem(0.36);
+    line-height: 1.3;
+    padding-top: 0.4rem;
   }
 }

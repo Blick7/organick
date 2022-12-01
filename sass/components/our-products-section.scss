@@ -1,6 +1,8 @@
+@import '../_functions.scss';
+
 .org-our-products {
   &-content {
-    padding: 8rem 0; // 128px
+    padding: pxToRem(128) 0;
   }
 
   &__title {
@@ -8,6 +10,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2.625rem;
+    padding-bottom: pxToRem(42);
   }
 }

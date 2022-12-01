@@ -1,5 +1,6 @@
 @use './_typography.scss';
 @use './_variables.scss';
+@use './_functions.scss';
 
 @use './components/header.scss';
 @use './components/hero-section.scss';
@@ -66,7 +67,7 @@ h3 {
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-size: var(--fs-1);
-  border-radius: 1rem;
+  border-radius: pxToRem(16);
 
   cursor: pointer;
 
@@ -82,17 +83,17 @@ h3 {
 
   &__text {
     // display: inline-block;
-    padding: 1.563rem 1.5rem 1.563rem 2.063rem;
+    padding: pxToRem(25) pxToRem(24) pxToRem(25) pxToRem(33);
   }
 
   &__icon {
-    width: 2.375rem;
-    height: 2.125rem;
+    width: pxToRem(38);
+    height: pxToRem(34);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-right: 0.625rem;
+    margin-right: pxToRem(10);
 
     background-color: var(--light-secondary-color);
   }
@@ -104,12 +105,12 @@ h3 {
 
 .col-left {
   width: 50%;
-  padding-right: 1.563rem; // 25px
+  padding-right: pxToRem(25);
 }
 
 .col-right {
   width: 50%;
-  padding-left: 1.563rem; // 25px
+  padding-left: pxToRem(25);
 }
 
 @media (max-width: 1200px) {

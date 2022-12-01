@@ -1,6 +1,8 @@
+@import '../_functions.scss';
+
 .org-hero {
   position: relative;
-  height: 57.063rem;
+  height: pxToRem(913);
 
   &__bg-image {
     position: absolute;
@@ -16,20 +18,24 @@
   }
 
   &-content {
-    padding-top: 13.75rem; // 220px
+    padding-top: pxToRem(220);
     color: var(--secondary-color);
+  }
 
-    & > h3 {
-      padding-bottom: 1.875rem;
-    }
+  &__subtitle {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: var(--fs-2);
+    color: var(--primary-color);
+
+    padding-bottom: pxToRem(30);
   }
 
   &__title {
     font-size: var(--fs-3);
     line-height: 1.2;
-    max-width: 33rem;
-    letter-spacing: 0.36px;
+    max-width: pxToRem(528);
+    letter-spacing: pxToRem(0.36);
 
-    padding-bottom: 1.875rem;
+    padding-bottom: pxToRem(30);
   }
 }

@@ -1,21 +1,23 @@
+@import '../_functions.scss';
+
 .org-about-us {
   background-color: var(--light-grey);
 
   &-content {
-    padding: 8.125rem 0 8.75rem 0;
+    padding: pxToRem(130) 0 pxToRem(140) 0;
   }
 
   &__body {
     & > .org-label {
-      padding-bottom: 1rem;
+      padding-bottom: pxToRem(16);
     }
 
     & > .org-title {
-      padding-bottom: 1.5rem;
+      padding-bottom: pxToRem(24);
     }
 
     & > .list {
-      padding: 3.5rem 0;
+      padding: pxToRem(56) 0;
     }
   }
 }
@@ -33,15 +35,15 @@
     display: flex;
 
     &:first-child {
-      padding-bottom: 1.875rem;
+      padding-bottom: pxToRem(30);
     }
   }
 
   &__icon {
-    padding: 1.688rem 1.5rem; // 27px 24px
+    padding: pxToRem(27) pxToRem(24);
     background-color: var(--white);
-    border-radius: 1.25rem; // 20px
-    margin-right: 1.25rem; // 20px
+    border-radius: pxToRem(20);
+    margin-right: pxToRem(20);
   }
 }
 

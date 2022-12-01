@@ -1,7 +1,9 @@
+@import '../_functions.scss';
+
 .org-header-content {
-  max-height: 4.5rem;
+  max-height: pxToRem(72);
   height: 100%;
-  margin: 2.5rem 0;
+  margin: pxToRem(40) 0;
 
   display: flex;
   align-items: center;
@@ -12,9 +14,9 @@
 }
 
 .org-logo {
-  margin-right: 7.5rem; // 120px
+  margin-right: pxToRem(120);
   img:first-child {
-    padding-right: 0.625rem;
+    padding-right: pxToRem(10);
   }
 }
 
@@ -28,10 +30,10 @@
   }
 
   &__item {
-    padding-right: 2.5rem; // 40px
+    padding-right: pxToRem(40);
 
     &:last-child {
-      padding-left: 1.25rem; // 20px
+      padding-left: pxToRem(20);
     }
   }
 
@@ -42,27 +44,27 @@
 
 .cart {
   border: 1px solid #d4d4d4;
-  border-radius: 2.063rem; // 33px
+  border-radius: pxToRem(33);
 
   display: flex;
   align-items: center;
 
-  padding: 0.438rem 0; // 7px
-  padding-left: 0.688rem; // 11px
+  padding: pxToRem(7) 0;
+  padding-left: pxToRem(11);
 
   &__image {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: pxToRem(56);
+    height: pxToRem(56);
     background-color: var(--secondary-color);
-    border-radius: 6.25rem;
+    border-radius: pxToRem(100);
 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0.625rem; // 10px
+    margin-right: pxToRem(10);
   }
 
   &__text {
-    margin-right: 1.5rem; // 24px
+    margin-right: pxToRem(24);
   }
 }
