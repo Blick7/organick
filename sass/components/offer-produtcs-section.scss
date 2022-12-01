@@ -1,0 +1,31 @@
+@import '../_functions.scss';
+
+.org-offer-products {
+  background-color: var(--secondary-color);
+
+  &-content {
+    padding: pxToRem(140) 0;
+  }
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-bottom: 3rem;
+
+    & .org-btn {
+      max-width: 267px;
+      max-height: 82px;
+      width: 100%;
+      height: 100%;
+
+      margin-top: auto;
+    }
+  }
+  &__text {
+    & .org-title {
+      color: var(--white);
+      padding-top: 1rem;
+    }
+  }
+}

@@ -8,6 +8,7 @@
 @use './components/about-us-section.scss';
 @use './components/our-products-section.scss';
 @use './components/testimonial-section.scss';
+@use './components/offer-produtcs-section.scss';
 
 html {
   ul {
@@ -67,12 +68,13 @@ h3 {
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-size: var(--fs-1);
-  border-radius: pxToRem(16);
+  border-radius: 1rem;
 
   cursor: pointer;
 
   &--tertiary {
     background-color: var(--tertiary-color);
+    color: var(--secondary-color);
   }
 
   &--secondary {
@@ -83,17 +85,17 @@ h3 {
 
   &__text {
     // display: inline-block;
-    padding: pxToRem(25) pxToRem(24) pxToRem(25) pxToRem(33);
+    padding: 1.563rem 1.5rem 1.563rem 2.063rem;
   }
 
   &__icon {
-    width: pxToRem(38);
-    height: pxToRem(34);
+    width: 2.375rem;
+    height: 2.125rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-right: pxToRem(10);
+    margin-right: 0.625rem;
 
     background-color: var(--light-secondary-color);
   }
@@ -105,12 +107,12 @@ h3 {
 
 .col-left {
   width: 50%;
-  padding-right: pxToRem(25);
+  padding-right: 1.563rem;
 }
 
 .col-right {
   width: 50%;
-  padding-left: pxToRem(25);
+  padding-left: 1.563rem;
 }
 
 @media (max-width: 1200px) {
