@@ -1,0 +1,113 @@
+@import '../_functions.scss';
+
+.org-news {
+  &-content {
+    padding: pxToRem(130) 0;
+  }
+
+  &__items {
+    display: flex;
+    gap: pxToRem(30);
+
+    padding-top: pxToRem(104);
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__image {
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__description {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: var(--white);
+    padding: pxToRem(50);
+    max-width: pxToRem(610);
+    width: 100%;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.14);
+    border-radius: pxToRem(30);
+
+    & .org-paragraph {
+      max-width: pxToRem(442);
+    }
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    padding-bottom: pxToRem(10);
+
+    & img {
+      display: block;
+    }
+
+    & div {
+      padding-left: pxToRem(10);
+    }
+  }
+
+  &__name {
+    font-size: var(--fs-6);
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+  }
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: var(--fs-7);
+    color: var(--secondary-color);
+    padding-bottom: pxToRem(38);
+  }
+
+  &__button {
+    padding-top: pxToRem(13);
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+    font-size: var(--fs-1);
+    display: inline-flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    &-icon {
+      width: pxToRem(19);
+      height: pxToRem(19);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 0.625rem;
+      background-color: var(--light-secondary-color);
+
+      margin-left: pxToRem(10);
+
+      & img {
+        transform: scale(0.8);
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .org-title {
+      padding-top: 1.5rem;
+    }
+
+    & .org-btn {
+      margin-top: pxToRem(63);
+      border: pxToRem(1) solid var(--secondary-color);
+    }
+  }
+}

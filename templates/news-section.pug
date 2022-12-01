@@ -1,0 +1,37 @@
+- var buttonText = 'More News';
+- var firstParagraph = 'Organic farming is the only way that you still can experience the real world.'
+- var secondParagraph = 'The world of nature has grown on the principles of health, ecology, and care.'
+
+section.org-news
+  .org-container
+    .org-news-content
+      .org-news__header
+        .org-news__text 
+          h3.org-label News
+          h2.org-title Discover The Recent Content About Organic Products
+        +org-button(buttonText, '')
+      .org-news__items
+        .org-news__item
+          .org-news__image
+            img(src="../assets/png/lettuce.png", alt="lettuce")
+          .org-news__description
+            .org-news__person
+              img(src="../assets/svg/person.svg", alt="person") 
+              .org-news__name Kristina Castle
+            .org-news__title Everything You Need to Know About Organic
+            .org-paragraph= firstParagraph
+            .org-news__button View More
+              .org-news__button-icon
+                img(src="../assets/svg/arrow.svg", alt="arrow")
+        .org-news__item
+          .org-news__image
+            img(src="../assets/png/organic-tomatoes.png", alt="tomato")
+          .org-news__description
+            .org-news__person
+              img(src="../assets/svg/person.svg", alt="person") 
+              .org-news__name Alex Louis
+            .org-news__title Organic Fruits: Surprising Benefits and Facts
+            .org-paragraph= secondParagraph
+            .org-news__button View More
+              .org-news__button-icon
+                img(src="../assets/svg/arrow.svg", alt="arrow")
