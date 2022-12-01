@@ -1,0 +1,53 @@
+@import '../_functions.scss';
+
+.org-eco-friendly {
+  & .org-container {
+    padding: 0;
+  }
+
+  &-content {
+  }
+
+  & .col-left,
+  .col-right {
+    padding: 0;
+  }
+
+  & .col-left {
+    & img {
+      height: 100%;
+    }
+  }
+
+  & .col-right {
+    display: flex;
+    align-items: center;
+  }
+
+  & .org-title {
+    padding-top: 1rem;
+    padding-bottom: 1.6rem;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 10;
+    left: -3rem;
+    background-color: var(--white);
+    padding: pxToRem(40) pxToRem(60);
+    border-radius: pxToRem(30);
+
+    & h4 {
+      padding-top: 0.8rem;
+      padding-bottom: 0.3rem;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-8);
+    line-height: 1.4;
+    letter-spacing: pxToRem(0.36);
+    color: var(--secondary-color);
+  }
+}

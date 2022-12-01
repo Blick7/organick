@@ -1,0 +1,24 @@
+- var label = 'Eco Friendly'
+- var title = 'From Our Farm <br> To Your Home.'
+- var firstParagraph = 'In our listing, we have several collections of organic products. This is <br> the place where you need to choose the product you want.'
+- var secondParagraph = 'The Product that you ordered will be verified that we have or not if <br> have we will start to move on with the next step.'
+- var thirdParagraph = 'If you are not comfortable going to the nearby market place we also <br> will deliver your product to your doorstep.'
+
+section.org-eco-friendly 
+  .org-container 
+    .org-eco-friendly-content
+      .row 
+        .col-left 
+          img(src="../assets/png/farm.png", alt="eco-farm")
+        .col-right
+          .org-eco-friendly__body 
+            h3.org-label= label
+            h1.org-title !{title}
+            h4.org-eco-friendly__subtitle= 'Choose Your Products'
+            p.org-paragraph !{firstParagraph}
+            h4.org-eco-friendly__subtitle= 'Farmers will produce it'
+            p.org-paragraph !{secondParagraph}
+            h4.org-eco-friendly__subtitle= 'We Can Delivery too'
+            p.org-paragraph !{thirdParagraph}
+
+
