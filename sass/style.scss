@@ -13,6 +13,7 @@
 @use './components/products-showcase-section.scss';
 @use './components/news-section.scss';
 @use './components/subscribe-to-newsletter-section.scss';
+@use './components/footer.scss';
 
 html {
   ul {
@@ -32,6 +33,10 @@ h6 {
 button,
 input {
   border: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 h3 {
