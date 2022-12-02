@@ -7,7 +7,7 @@
     &-container {
       display: flex;
       gap: pxToRem(30);
-      padding: pxToRem(140) 0;
+      padding: var(--space-220px) 0;
     }
 
     & .org-container {
@@ -47,5 +47,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .org-products__text {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .org-products-showcase-container {
+    flex-wrap: wrap;
+  }
+  .org-products__item {
+    flex: 1 0 100%;
   }
 }

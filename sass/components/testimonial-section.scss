@@ -20,9 +20,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: pxToRem(130);
-    padding-bottom: pxToRem(150);
 
+    padding: var(--space-220px) 0;
     & > .org-label {
       margin-bottom: pxToRem(16);
     }
@@ -67,7 +66,8 @@
 
   &__divider {
     height: 0.1rem;
-    width: 60.375rem; // 966px;
+    max-width: 60.375rem; // 966px;
+    width: 100%;
     background-color: var(--grey);
 
     margin-top: 6rem; // 96px
@@ -122,5 +122,19 @@
     letter-spacing: pxToRem(0.36);
     line-height: 1.3;
     padding-top: 0.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .org-testimonial__divider {
+    margin-top: 3rem;
+  }
+  .org-testimonial__advantages {
+    margin-top: 3rem;
+  }
+
+  .org-testimonial__item {
+    width: pxToRem(220);
+    height: pxToRem(220);
   }
 }

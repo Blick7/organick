@@ -2,7 +2,7 @@
 
 .org-natural-offer {
   &-content {
-    padding: pxToRem(140) 0; // 140px 0
+    padding: var(--space-220px) 0; // 140px 0
   }
 
   &__item {
@@ -46,4 +46,16 @@
 
 .fresh-fruits {
   color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .org-natural-offer__body {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .org-natural-offer__body {
+    padding-left: 1rem;
+  }
 }

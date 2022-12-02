@@ -85,6 +85,13 @@
   }
 
   &__logo {
+    display: flex;
+    align-items: center;
+
+    & img:last-child {
+      height: pxToRem(36);
+    }
+
     & img:first-of-type {
       margin-right: pxToRem(10);
     }

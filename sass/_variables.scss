@@ -26,4 +26,10 @@
   --fs-9: clamp(0.63rem, calc(0.55rem + 0.36vw), 0.88rem); // max 14, min 10
   --fs-10: clamp(2.38rem, calc(2.16rem + 1.07vw), 3.13rem); // max 50, min 38
   --fs-11: clamp(1.63rem, calc(1.55rem + 0.36vw), 1.88rem); // max 30, min 26
+
+  --space-220px: clamp(
+    2.5rem,
+    calc(-0.71rem + 16.07vw),
+    13.75rem
+  ); //max 220, min 40
 }

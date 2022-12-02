@@ -2,7 +2,7 @@
 
 .org-our-products {
   &-content {
-    padding: pxToRem(128) 0;
+    padding: var(--space-220px) 0;
   }
 
   &__title {

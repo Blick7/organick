@@ -14,7 +14,13 @@
 }
 
 .org-logo {
+  display: flex;
+  align-items: center;
   margin-right: pxToRem(120);
+
+  & img:last-child {
+    height: pxToRem(36);
+  }
   img:first-child {
     padding-right: pxToRem(10);
   }
@@ -68,5 +74,77 @@
 
   &__text {
     margin-right: pxToRem(24);
+  }
+}
+
+.org-burger-button {
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+
+  cursor: pointer;
+
+  display: none;
+
+  & span {
+    display: block;
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: var(--secondary-color);
+
+    &:not(:first-child) {
+      margin-top: 0.3rem;
+    }
+  }
+}
+
+.org-burger {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .org-logo {
+    margin-right: 2rem;
+  }
+
+  .org-navigation {
+    &__item {
+      &:last-child {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .org-navigation {
+    &__item {
+      &:not(:last-child) {
+        padding-right: 1rem;
+      }
+
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .org-navigation {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .org-burger-button {
+    display: flex;
   }
 }

@@ -4,7 +4,7 @@
   background-color: var(--secondary-color);
 
   &-content {
-    padding: pxToRem(140) 0;
+    padding: var(--space-220px) 0;
   }
   &__header {
     display: flex;
@@ -27,5 +27,14 @@
       color: var(--white);
       padding-top: 1rem;
     }
+  }
+}
+
+@media (max-width: 770px) {
+  .org-offer-products__header {
+    display: flex;
+  }
+  .org-offer-products__text {
+    margin-bottom: 1rem;
   }
 }

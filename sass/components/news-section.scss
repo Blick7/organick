@@ -2,7 +2,7 @@
 
 .org-news {
   &-content {
-    padding: pxToRem(130) 0;
+    padding: var(--space-220px) 0;
   }
 
   &__items {
@@ -109,5 +109,22 @@
       margin-top: pxToRem(63);
       border: pxToRem(1) solid var(--secondary-color);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .org-news__items {
+    padding-top: pxToRem(40);
+
+    flex-direction: column;
+    gap: pxToRem(100);
+  }
+
+  .org-news__description {
+    padding: 2rem;
+  }
+
+  .org-news__title {
+    padding-bottom: 1.5rem;
   }
 }

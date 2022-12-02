@@ -18,7 +18,7 @@
   }
 
   &-content {
-    padding-top: pxToRem(220);
+    padding-top: var(--space-220px);
     color: var(--secondary-color);
   }
 
@@ -33,5 +33,30 @@
   & .org-title {
     padding-top: pxToRem(14);
     padding-bottom: pxToRem(30);
+  }
+}
+
+@media (max-width: 1024px) {
+  .org-hero {
+    max-height: pxToRem(1000);
+    height: 100%;
+  }
+
+  .org-hero-content {
+    padding-bottom: 2rem;
+  }
+
+  .org-hero__bg-image {
+    & img {
+      object-position: right center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .org-hero__bg-image {
+    & img {
+      // height: 60%;
+    }
   }
 }
