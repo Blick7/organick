@@ -12,6 +12,7 @@
 @use './components/eco-friendly-section.scss';
 @use './components/products-showcase-section.scss';
 @use './components/news-section.scss';
+@use './components/subscribe-to-newsletter-section.scss';
 
 html {
   ul {
@@ -26,6 +27,11 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+button,
+input {
+  border: 0;
 }
 
 h3 {
