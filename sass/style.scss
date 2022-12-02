@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 h3 {
   font-family: 'Yellowtail', sans-serif;
   font-size: var(--fs-2);
@@ -58,6 +62,13 @@ h3 {
   font-size: var(--fs-5);
   font-weight: 700;
   color: var(--secondary-color);
+}
+
+.org-title--lg {
+  font-size: var(--fs-3);
+  line-height: 1.2;
+  max-width: 33rem;
+  letter-spacing: 0.36px;
 }
 
 .org-paragraph {
@@ -148,7 +159,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     gap: 1.25rem; // 20px
   }
 
@@ -173,7 +184,11 @@ h3 {
     line-height: 1.8;
   }
   &__img {
-    width: 100%;
+    // width: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__title {

@@ -30,7 +30,9 @@
   }
 
   &__item {
-    padding-right: pxToRem(40);
+    &:not(:last-child) {
+      padding-right: pxToRem(40);
+    }
 
     &:last-child {
       padding-left: pxToRem(20);

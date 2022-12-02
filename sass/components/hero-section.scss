@@ -30,12 +30,8 @@
     padding-bottom: pxToRem(30);
   }
 
-  &__title {
-    font-size: var(--fs-3);
-    line-height: 1.2;
-    max-width: pxToRem(528);
-    letter-spacing: pxToRem(0.36);
-
+  & .org-title {
+    padding-top: pxToRem(14);
     padding-bottom: pxToRem(30);
   }
 }

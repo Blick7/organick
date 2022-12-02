@@ -29,13 +29,13 @@
 
     & > .org-paragraph {
       text-align: center;
-      padding-top: pxToRem(34);
+      margin-top: pxToRem(34);
     }
   }
 
   &__customer-img {
-    padding-top: 3.75rem; // 60px
-    padding-bottom: 1.1rem;
+    margin-top: 3.75rem; // 60px
+    margin-bottom: 1.1rem;
   }
 
   &__customer-rating {
@@ -79,7 +79,7 @@
     justify-content: center;
 
     gap: 1.625rem; // 26px
-    padding-top: 6.25rem; // 100px
+    margin-top: 6.25rem; // 100px
   }
 
   &__item {
