@@ -30,6 +30,15 @@
       text-align: center;
       margin-top: pxToRem(34);
     }
+
+    & p {
+      max-width: pxToRem(900);
+      width: 100%;
+    }
+
+    & h1 {
+      text-align: center;
+    }
   }
 
   &__customer-img {

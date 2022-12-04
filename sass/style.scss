@@ -37,6 +37,7 @@ input {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -144,7 +145,6 @@ h3 {
   &__items {
     display: flex;
     flex-wrap: wrap;
-    // align-items: center;
     justify-content: center;
     gap: 1.25rem; // 20px
   }
@@ -154,8 +154,13 @@ h3 {
     padding: 1.8rem; // 30px
     background-color: var(--light-grey);
     border-radius: 1.875rem; // 30px
-    max-width: 27.938rem; // 447px
+    // max-width: 27.938rem; // 447px //! remove this to make 3rd(if last) element fill all space
     width: 100%;
+
+    // ?!
+    // @media (max-width: 1080px) {
+    //   // flex: 1 0 50%;
+    // }
   }
 
   &__label {
@@ -223,11 +228,11 @@ h3 {
     gap: 2rem;
   }
   .col-left {
-    width: 100%;
+    width: 80%;
     padding-right: 0;
   }
   .col-right {
-    width: 100%;
+    width: 80%;
     padding-left: 0;
   }
 }
@@ -243,6 +248,13 @@ h3 {
 
   .products__new-price {
     margin-left: 0rem;
+  }
+
+  .col-left {
+    width: 100%;
+  }
+  .col-right {
+    width: 100%;
   }
 }
 

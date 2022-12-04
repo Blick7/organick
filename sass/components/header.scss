@@ -60,6 +60,8 @@
   padding: pxToRem(7) 0;
   padding-left: pxToRem(11);
 
+  cursor: pointer;
+
   &__image {
     width: pxToRem(56);
     height: pxToRem(56);

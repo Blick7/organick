@@ -20,11 +20,14 @@
   & .col-right {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   & .org-title {
     padding-top: 1rem;
     padding-bottom: 1.6rem;
+    max-width: pxToRem(300);
+    width: 100%;
   }
 
   &__body {
@@ -38,6 +41,11 @@
     & h4 {
       padding-top: 0.8rem;
       padding-bottom: 0.3rem;
+    }
+
+    & p {
+      max-width: pxToRem(578);
+      width: 100%;
     }
   }
 
