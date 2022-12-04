@@ -68,6 +68,15 @@
 
     cursor: pointer;
 
+    transition: 0.5s ease;
+    &:hover {
+      background-color: var(--dark-secondary-color);
+    }
+
+    &:hover &-icon {
+      background-color: var(--dark-secondary-color);
+    }
+
     &-icon {
       width: pxToRem(35);
       height: pxToRem(28);
@@ -79,6 +88,8 @@
       margin-left: pxToRem(25);
 
       background-color: var(--light-secondary-color);
+
+      transition: 0.5s ease;
 
       & img {
         width: pxToRem(14);
@@ -110,10 +121,6 @@
 
     &__form {
       margin-top: 1rem;
-    }
-
-    &__btn {
-      // margin-top: 1rem;
     }
   }
 }

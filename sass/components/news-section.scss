@@ -109,6 +109,11 @@
       margin-top: pxToRem(63);
       border: pxToRem(1) solid var(--secondary-color);
     }
+
+    & .org-btn:hover {
+      background-color: var(--dark-secondary-color);
+      color: white;
+    }
   }
 }
 
