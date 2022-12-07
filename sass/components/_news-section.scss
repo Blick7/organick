@@ -1,8 +1,6 @@
-@import '../_functions.scss';
-
 .org-news {
-  &-content {
-    padding: var(--space-220px) 0;
+  &__content {
+    padding: var(--space-140px) 0;
   }
 
   &__items {
@@ -32,7 +30,7 @@
     padding: pxToRem(50);
     max-width: pxToRem(610);
     width: 100%;
-    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px pxToRem(2) pxToRem(18) rgba(0, 0, 0, 0.14);
     border-radius: pxToRem(30);
 
     & .org-paragraph {
@@ -56,12 +54,12 @@
 
   &__name {
     font-size: var(--fs-6);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--ff-secondary);
     color: var(--secondary-color);
   }
 
   &__title {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--ff-secondary);
     font-weight: 700;
     font-size: var(--fs-7);
     color: var(--secondary-color);
@@ -70,7 +68,7 @@
 
   &__button {
     padding-top: pxToRem(13);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--ff-secondary);
     color: var(--secondary-color);
     font-size: var(--fs-1);
     display: inline-flex;
@@ -85,7 +83,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      margin-right: 0.625rem;
+      margin-right: pxToRem(10);
       background-color: var(--light-secondary-color);
 
       margin-left: pxToRem(10);
@@ -102,7 +100,7 @@
     justify-content: space-between;
 
     & .org-title {
-      padding-top: 1.5rem;
+      padding-top: pxToRem(24);
     }
 
     & .org-btn {
@@ -126,10 +124,10 @@
   }
 
   .org-news__description {
-    padding: 2rem;
+    padding: pxToRem(32);
   }
 
   .org-news__title {
-    padding-bottom: 1.5rem;
+    padding-bottom: pxToRem(24);
   }
 }

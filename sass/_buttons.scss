@@ -1,0 +1,50 @@
+// Common styles for buttons
+.org-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-se);
+  font-size: var(--fs-1);
+  border-radius: pxToRem(16);
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  &--tertiary {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+  }
+  &--tertiary:hover {
+    background-color: var(--dark-tertiary-color);
+  }
+
+  &--secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: normal;
+  }
+
+  &--secondary:hover {
+    background-color: var(--dark-secondary-color);
+  }
+
+  &__text {
+    padding: pxToRem(25) pxToRem(24) pxToRem(25) pxToRem(33);
+  }
+
+  &__icon {
+    width: pxToRem(38);
+    height: pxToRem(34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: pxToRem(10);
+    transition: 0.5s ease;
+
+    background-color: var(--light-secondary-color);
+  }
+
+  &:hover &__icon {
+    background-color: var(--dark-secondary-color);
+  }
+}

@@ -1,5 +1,3 @@
-@import '../_functions.scss';
-
 .org-hero {
   position: relative;
   height: pxToRem(913);
@@ -17,13 +15,13 @@
     }
   }
 
-  &-content {
-    padding-top: var(--space-220px);
+  &__content {
+    padding-top: var(--space-140px);
     color: var(--secondary-color);
   }
 
   &__subtitle {
-    font-family: 'Yellowtail', sans-serif;
+    font-family: var(--ff-tertiary);
     font-size: var(--fs-2);
     color: var(--primary-color);
 
@@ -42,8 +40,8 @@
     height: 100%;
   }
 
-  .org-hero-content {
-    padding-bottom: 2rem;
+  .org-hero__content {
+    padding-bottom: pxToRem(32);
   }
 
   .org-hero__bg-image {
@@ -52,11 +50,3 @@
     }
   }
 }
-
-// @media (max-width: 768px) {
-//   .org-hero__bg-image {
-//     & img {
-//       // height: 60%;
-//     }
-//   }
-// }

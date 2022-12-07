@@ -12,6 +12,8 @@
   --dark-grey-color: #525c60;
   --grey: #b8b8b8;
   --light-grey-1: #d5d5d5;
+  --light-grey-2: #d4d4d4;
+  --light-blue: #4eabcf;
 
   --fs-1: clamp(1rem, calc(0.93rem + 0.36vw), 1.25rem); // max 20px, min 16px
   --fs-2: clamp(
@@ -29,9 +31,14 @@
   --fs-10: clamp(2.38rem, calc(2.16rem + 1.07vw), 3.13rem); // max 50, min 38
   --fs-11: clamp(1.63rem, calc(1.55rem + 0.36vw), 1.88rem); // max 30, min 26
 
-  --space-220px: clamp(
+  --space-140px: clamp(
     1.88rem,
     calc(-0.09rem + 9.82vw),
     8.75rem
   ); //max 140, min 30
+
+  // fonts
+  --ff-primary: 'Open Sans', sans-serif;
+  --ff-secondary: 'Roboto', sans-serif;
+  --ff-tertiary: 'Yellowtail', sans-serif;
 }

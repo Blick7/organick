@@ -1,5 +1,3 @@
-@import '../_functions.scss';
-
 .org-testimonial {
   position: relative;
 
@@ -16,12 +14,12 @@
     }
   }
 
-  &-content {
+  &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    padding: var(--space-220px) 0;
+    padding: var(--space-140px) 0;
     & > .org-label {
       margin-bottom: pxToRem(16);
     }
@@ -42,8 +40,8 @@
   }
 
   &__customer-img {
-    margin-top: 3.75rem; // 60px
-    margin-bottom: 1.1rem;
+    margin-top: pxToRem(60);
+    margin-bottom: pxToRem(17);
   }
 
   &__customer-rating {
@@ -51,35 +49,35 @@
       transform: scale(1.3);
 
       &:not(:last-child) {
-        padding-right: 0.35rem;
+        padding-right: pxToRem(5);
       }
     }
   }
 
   &__customer-name {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--ff-secondary);
     font-weight: 700;
     font-size: var(--fs-7);
     line-height: 1.3;
     color: var(--secondary-color);
 
-    padding-top: 1.438rem; // 23px
+    padding-top: pxToRem(23);
   }
   &__consumer {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary);
     font-size: var(--fs-9);
     color: var(--dark-grey-color);
 
-    padding-top: 0.3rem;
+    padding-top: pxToRem(5);
   }
 
   &__divider {
-    height: 0.1rem;
-    max-width: 60.375rem; // 966px;
+    height: pxToRem(1);
+    max-width: pxToRem(966);
     width: 100%;
     background-color: var(--grey);
 
-    margin-top: 6rem; // 96px
+    margin-top: pxToRem(96);
   }
 
   &__advantages {
@@ -87,23 +85,23 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    gap: 1.625rem; // 26px
-    margin-top: 6.25rem; // 100px
+    gap: pxToRem(26);
+    margin-top: pxToRem(100);
   }
 
   &__item {
-    width: 15.625rem; // 250px
-    height: 15.625rem;
-    border: 0.1rem solid var(--primary-color);
+    width: pxToRem(250);
+    height: pxToRem(250);
+    border: pxToRem(1) solid var(--primary-color);
     border-radius: 50%;
-    border-width: 0.4rem 0.2rem 0.2rem 0.4rem;
+    border-width: pxToRem(6) pxToRem(3) pxToRem(3) pxToRem(6);
   }
 
   &__item-inner {
     width: 100%;
     height: 100%;
 
-    border: 0.2rem solid var(--white);
+    border: pxToRem(3) solid var(--white);
 
     background-color: var(--dark-grey);
     border-radius: 50%;
@@ -115,7 +113,7 @@
   }
 
   &__number {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--ff-secondary);
     font-weight: 700;
     font-size: var(--fs-4);
     color: var(--secondary-color);
@@ -124,22 +122,22 @@
   }
 
   &__text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--ff-primary);
     font-weight: 700;
     font-size: var(--fs-6);
     color: var(--secondary-color);
     letter-spacing: pxToRem(0.36);
     line-height: 1.3;
-    padding-top: 0.4rem;
+    padding-top: pxToRem(6);
   }
 }
 
 @media (max-width: 768px) {
   .org-testimonial__divider {
-    margin-top: 3rem;
+    margin-top: pxToRem(48);
   }
   .org-testimonial__advantages {
-    margin-top: 3rem;
+    margin-top: pxToRem(48);
   }
 
   .org-testimonial__item {

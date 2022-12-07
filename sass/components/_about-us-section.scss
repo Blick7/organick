@@ -1,13 +1,15 @@
-@import '../_functions.scss';
-
 .org-about-us {
   background-color: var(--light-grey);
 
-  &-content {
-    padding: var(--space-220px) 0 var(--space-220px) 0;
+  &__content {
+    padding: var(--space-140px) 0 var(--space-140px) 0;
   }
 
   &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     & .org-paragraph {
       max-width: pxToRem(650);
       width: 100%;
@@ -27,11 +29,6 @@
   }
 
   &__img {
-    // max-width: pxToRem(675);
-    // width: 100%;
-    // max-height: pxToRem(642);
-    // height: 100%;
-
     & img {
       width: 100%;
       height: 100%;
@@ -41,7 +38,7 @@
 
 .list {
   &__title {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--ff-secondary);
     font-weight: 400;
     font-size: var(--fs-7);
     line-height: 1.4;
@@ -69,10 +66,8 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .org-about-us__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
   }
 }
