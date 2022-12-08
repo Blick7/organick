@@ -164,7 +164,7 @@ h3 {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .products__items {
     grid-template-columns: repeat(auto-fit, minmax(pxToRem(345), 1fr));
   }
