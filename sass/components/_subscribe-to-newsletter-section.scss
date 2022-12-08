@@ -29,10 +29,6 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    // position: absolute;
-    // left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
     padding: 0 pxToRem(70);
     z-index: 1;
   }
@@ -111,14 +107,6 @@
 
 @media (max-width: 960px) {
   .org-subscribe-to-newsletter {
-    &__content {
-    }
-
-    &__bg-image {
-      & img {
-      }
-    }
-
     &__body {
       padding: 0 pxToRem(32);
     }
@@ -135,21 +123,11 @@
       display: flex;
       gap: pxToRem(16);
     }
-
-    &__input {
-      // width: 100%;
-    }
-    &__btn {
-      // margin-top: pxToRem(16);
-    }
   }
 }
 
 @media (max-width: 425px) {
   .org-subscribe-to-newsletter {
-    &__content {
-      // padding: pxToRem(32) 0;
-    }
     &__body {
       padding: 0 pxToRem(16);
     }
