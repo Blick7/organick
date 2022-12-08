@@ -16,15 +16,15 @@
     }
 
     & > .org-label {
-      padding-bottom: pxToRem(16);
+      margin-bottom: pxToRem(16);
     }
 
     & > .org-title {
-      padding-bottom: pxToRem(24);
+      margin-bottom: pxToRem(24);
     }
 
     & > .list {
-      padding: pxToRem(56) 0;
+      margin: pxToRem(56) 0;
     }
   }
 

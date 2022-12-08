@@ -36,6 +36,11 @@
     calc(-0.09rem + 9.82vw),
     8.75rem
   ); //max 140, min 30
+  --space-100px: clamp(
+    1.88rem,
+    calc(0.63rem + 6.25vw),
+    6.25rem
+  ); // max 100, min 30
 
   // fonts
   --ff-primary: 'Open Sans', sans-serif;
